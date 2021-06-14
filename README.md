@@ -1,6 +1,6 @@
 # Final Assignment
 
-This project is a multiple choice quiz based application used for the "quiz" addon to the summer 2021 School of Computer Science convocation video. If students succesfully answer these questions, the app gives them a bonus congratulator message from the School of Computer Science.
+This project is a multiple choice quiz based application used for the "quiz" addon to the summer 2021 School of Computer Science convocation video. If students successfully answer these questions, the app gives them a bonus congratulatory message from the School of Computer Science.
 
 # Tech Stack
 

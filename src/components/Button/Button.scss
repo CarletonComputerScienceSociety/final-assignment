@@ -1,1 +1,19 @@
-
+button{
+    color: white;
+    border-width: 0em;
+    border-radius: 0.2rem;
+    background-color: rgb(250, 48, 48);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding: 0.8rem 2.25rem;
+    min-width: 8rem;
+    max-height: 3rem;
+    transition: all 0.15s;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+}
+button:hover{
+    background-color: rgb(122, 47, 47);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}

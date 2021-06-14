@@ -58,7 +58,7 @@
     {/if}
   </div>
   <div on:click={submitAssignment}>
-    <Button label="submit" />
+    <Button label="Submit" />
   </div>
 </div>
 
