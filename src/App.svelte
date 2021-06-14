@@ -1,6 +1,6 @@
 <script>
   import Router from 'svelte-spa-router';
-  import {Footer} from './components';
+  import {Footer, Navbar} from './components';
   import {Home, NotFound} from './pages';
   const routes = {
     '/': Home,
@@ -8,5 +8,8 @@
   };
 </script>
 
-<Router {routes} />
+<Navbar />
+<div style="margin-top: 6rem">
+  <Router {routes} />
+</div>
 <Footer />
