@@ -1,1 +1,1 @@
-export { default as NotFound } from './NotFound.svelte'
+export {default as NotFound} from './NotFound.svelte';
