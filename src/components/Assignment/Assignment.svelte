@@ -1,17 +1,13 @@
 <script>
   import {Question} from '../../components';
-  export let questions;
-  export let state;
-  console.log(state);
+  export let ui;
+  export let object;
 </script>
 
 <div class="assignent">
-  {#each questions as question}
+  {#each ui.questions as question}
     <div class="assignment-question">
-      <Question
-        {question}
-        state={state.questions.find(q => q.index === questions.id)}
-      />
+      <Question {question} assignment={object} />
     </div>
   {/each}
 </div>

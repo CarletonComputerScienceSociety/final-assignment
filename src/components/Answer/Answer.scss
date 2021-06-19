@@ -1,23 +1,47 @@
 .answer {
-    border: 1px solid #ccc!important;
-    border-radius: 0.5rem;
-    height: 3rem;
-    margin: 1rem;
-    font-size: 16px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.answer:hover {
-    background-color: rgb(226, 246, 255);
+  border: 1px solid #ccc !important;
+  border-radius: 0.5rem;
+  height: 3rem;
+  margin: 1rem;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .answer-inner {
-    padding: 0 1rem;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 2rem;
-    width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 2rem;
+  width: 100%;
+}
+
+.selected {
+  background-color: rgb(197, 237, 255);
+}
+
+.unselected {
+  background-color: white;
+}
+
+.unselected:hover {
+  background-color: rgb(226, 246, 255);
+}
+
+.correct {
+  background-color: #80ff80;
+}
+
+.incorrect {
+  background-color: #ff4242;
+}
+
+.solution {
+  background-color: #c1f0c1;
+}
+
+.solution:hover {
+  background-color: #a1fda1;
 }

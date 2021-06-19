@@ -1,42 +1,23 @@
 <script>
   import {onMount} from 'svelte';
-  import {assign} from 'svelte/internal';
   import {Button, Assignment} from '../../components';
   import {questions} from '../../data';
-  let state;
+  import {Assignment as AssignmentState} from '../../model';
+
+  let assignment = new AssignmentState(questions);
+  let ui;
+  let object;
+
+  $: {
+    ui = $assignment.getComponentFormat();
+    object = $assignment;
+  }
 
   onMount(async () => {
-    state = {
-      questions: [],
-      submitted: false
-    };
-
-    for (let i = 0; i < questions.length; i++) {
-      let questionState = {
-        id: questions[i].id,
-        answers: []
-      };
-
-      for (let j = 0; j < questions[i].answers.length; j++) {
-        let answerState = {
-          answerIndex: j,
-          letter: questions[i].answers[j].letter,
-          selected: false
-        };
-
-        questionState.answers.push(answerState);
-      }
-
-      state.questions.push(questionState);
-    }
+    assignment = $assignment;
+    ui = assignment.getComponentFormat();
+    object = assignment;
   });
-
-  const selectAnswer = (questionId, answerId) => {};
-
-  const submitAssignment = () => {
-    state.submitted = true;
-    console.log(state);
-  };
 </script>
 
 <div class="home-page">
@@ -53,12 +34,32 @@
     </div>
     <!-- svelte-ignore a11y-missing-attribute -->
     <img class="home-image" src="/outside_hp.jpeg" />
-    {#if state}
-      <Assignment {questions} {state} />
+    {#if assignment}
+      <Assignment {ui} {object} />
     {/if}
   </div>
-  <div on:click={submitAssignment}>
-    <Button label="Submit" />
+  {#if !object.submitted}
+    <div on:click={() => object.submit()}>
+      <Button label="Submit" />
+    </div>
+  {/if}
+  <div class="home-page-score">
+    {#if object.submitted}
+      <h2>You Scored: {object.getDisplayScore()}</h2>
+      {#if object.isPassingScore()}
+        <div>Congratulations you passed!</div>
+        <iframe
+          class="home-page-video"
+          src="https://www.youtube.com/embed/2Os-s_yoTWA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      {:else}
+        <div>Getting a perfect score will unlock the bonus message.</div>
+      {/if}
+    {/if}
   </div>
 </div>
 

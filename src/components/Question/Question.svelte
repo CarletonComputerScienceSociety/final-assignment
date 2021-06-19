@@ -1,8 +1,7 @@
 <script>
   import {Answer} from '../../components';
-  import {questions} from '../../data';
   export let question;
-  export let state;
+  export let assignment;
 </script>
 
 <div class="question">
@@ -11,10 +10,7 @@
     <div class="question-body">{question.body}</div>
   </div>
   {#each question.answers as answer}
-    <Answer
-      {answer}
-      state={state.answers.find(a => a.letter === answer.letter)}
-    />
+    <Answer {answer} {assignment} questionIndex={question.assignmentIndex} />
   {/each}
 </div>
 

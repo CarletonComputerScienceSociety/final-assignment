@@ -1,21 +1,15 @@
 <script>
-  import {createEventDispatcher} from 'svelte';
-
   // props
   export let answer;
-  export let state;
-
-  console.log(state);
-
-  // onClick
-  const dispatch = createEventDispatcher();
-
-  const onClick = event => {
-    dispatch('click', event);
-  };
+  export let assignment;
+  export let questionIndex;
 </script>
 
-<div class="answer" on:click={onClick}>
+<div
+  class="answer {answer.state}"
+  on:click={() =>
+    assignment.setSelectedAnswer(questionIndex, answer.assignmentIndex)}
+>
   <div class="answer-inner">
     <div class="answer-letter">{answer.letter})</div>
     <div class="answer-body">{answer.body}</div>
