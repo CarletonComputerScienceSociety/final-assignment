@@ -1,6 +1,6 @@
 <script>
   import {onMount} from 'svelte';
-  import {Button, Assignment} from '../../components';
+  import {Assignment, Button, Confetti} from '../../components';
   import {questions} from '../../data';
   import {Assignment as AssignmentState} from '../../model';
 
@@ -47,15 +47,7 @@
     {#if object.submitted}
       <h2>You Scored: {object.getDisplayScore()}</h2>
       {#if object.isPassingScore()}
-        <div>Congratulations you passed!</div>
-        <iframe
-          class="home-page-video"
-          src="https://www.youtube.com/embed/2Os-s_yoTWA"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
+        <Confetti />
       {:else}
         <div>Getting a perfect score will unlock the bonus message.</div>
       {/if}
