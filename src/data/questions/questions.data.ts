@@ -3,30 +3,24 @@ import {Question} from '../../types';
 const questions: Question[] = [
   {
     id: 1,
-    body: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.',
+    body: 'From which science fiction movie does the idea of teleportation originate from?',
     bodyFormat: '',
     answers: [
       {
         letter: 'a',
-        body: '',
+        body: 'Star Trek',
         bodyFormat: '',
         correct: true
       },
       {
         letter: 'b',
-        body: '',
+        body: 'Star Wars',
         bodyFormat: '',
         correct: false
       },
       {
         letter: 'c',
-        body: '',
-        bodyFormat: '',
-        correct: false
-      },
-      {
-        letter: 'd',
-        body: '',
+        body: 'Lost in Space',
         bodyFormat: '',
         correct: false
       }
@@ -34,92 +28,167 @@ const questions: Question[] = [
   },
   {
     id: 2,
-    body: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.',
+    body: 'Given a group of N graduating students, how many possible ways or ordered sequences can their names be called in?',
     bodyFormat: '',
     answers: [
       {
         letter: 'a',
-        body: '',
+        body: '1',
         bodyFormat: '',
-        correct: true
+        correct: false
       },
       {
         letter: 'b',
-        body: '',
+        body: 'log n',
         bodyFormat: '',
         correct: false
       },
       {
         letter: 'c',
-        body: '',
+        body: 'n',
         bodyFormat: '',
         correct: false
       },
       {
         letter: 'd',
-        body: '',
+        body: 'n!',
         bodyFormat: '',
-        correct: false
+        correct: true
       }
     ]
   },
   {
     id: 3,
-    body: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.',
+    body: 'Which of the following are programming languages?',
     bodyFormat: '',
     answers: [
       {
         letter: 'a',
-        body: '',
+        body: 'Chef',
         bodyFormat: '',
-        correct: true
+        correct: false
       },
       {
         letter: 'b',
-        body: '',
+        body: 'Cow',
         bodyFormat: '',
         correct: false
       },
       {
         letter: 'c',
-        body: '',
+        body: 'Whitespace',
         bodyFormat: '',
         correct: false
       },
       {
         letter: 'd',
-        body: '',
+        body: 'Shakespeare',
+        bodyFormat: '',
+        correct: false
+      }
+      {
+        letter: 'e',
+        body: 'All of the above',
+        bodyFormat: '',
+        correct: true
+      }
+    ]
+  },
+  {
+    id: 4,
+    body: 'Take the numbers from 1...10 (inclusive) and then shuffle before entering them into an empty binary search tree. What is the maximum possible height of that tree?',
+    bodyFormat: '',
+    answers: [
+      {
+        letter: 'a',
+        body: '8',
+        bodyFormat: '',
+        correct: false
+      },
+      {
+        letter: 'b',
+        body: '9',
+        bodyFormat: '',
+        correct: true
+      },
+      {
+        letter: 'c',
+        body: '10',
         bodyFormat: '',
         correct: false
       }
     ]
   },
   {
-    id: 4,
-    body: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.',
+    id: 5,
+    body: 'How many different foxes were there in the Summer 2021 convocation video?',
     bodyFormat: '',
     answers: [
       {
         letter: 'a',
-        body: '',
+        body: '4',
         bodyFormat: '',
         correct: true
       },
       {
         letter: 'b',
-        body: '',
+        body: '5',
         bodyFormat: '',
         correct: false
       },
       {
         letter: 'c',
-        body: '',
+        body: '6',
         bodyFormat: '',
         correct: false
       },
       {
         letter: 'd',
-        body: '',
+        body: '7',
+        bodyFormat: '',
+        correct: false
+      }
+    ]
+  },
+  {
+    id: 6,
+    body: 'How much compute is required to run the Carleton School of Computer Science?',
+    bodyFormat: '',
+    answers: [
+      {
+        letter: 'a',
+        body: 'A lot',
+        bodyFormat: '',
+        correct: true
+      },
+      {
+        letter: 'b',
+        body: 'None',
+        bodyFormat: '',
+        correct: false
+      }
+    ]
+  },
+  {
+    id: 7,
+    body: 'Unfortunately, there is no nobel prize for computer scientists. However, there is a prestige award named after a famous computer scientist. Who is he?',
+    bodyFormat: '',
+    answers: [
+      {
+        letter: 'a',
+        body: 'Alan Paul',
+        bodyFormat: '',
+        correct: false
+      },
+      {
+        letter: 'b',
+        body: 'Alan Turing',
+        bodyFormat: '',
+        correct: true
+      },
+      {
+        letter: 'c',
+        body: 'Van Halen',
         bodyFormat: '',
         correct: false
       }
