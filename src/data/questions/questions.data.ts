@@ -85,7 +85,7 @@ const questions: Question[] = [
         body: 'Shakespeare',
         bodyFormat: '',
         correct: false
-      }
+      },
       {
         letter: 'e',
         body: 'All of the above',
