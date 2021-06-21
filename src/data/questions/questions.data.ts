@@ -176,7 +176,7 @@ const questions: Question[] = [
     answers: [
       {
         letter: 'a',
-        body: 'Alan Paul',
+        body: 'Edgar Allan Poe',
         bodyFormat: '',
         correct: false
       },

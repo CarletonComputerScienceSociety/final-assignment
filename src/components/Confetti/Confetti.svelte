@@ -33,7 +33,7 @@
     <h2>You Scored: 7/7</h2>
     <iframe
       class="home-page-video"
-      src="https://www.youtube.com/embed/2Os-s_yoTWA"
+      src="https://www.youtube.com/embed/nrys2xH00u4"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
