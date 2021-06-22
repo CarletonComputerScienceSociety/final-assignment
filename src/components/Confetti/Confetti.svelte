@@ -1,5 +1,9 @@
 <script lang="ts">
   import {onMount} from 'svelte';
+
+  export let score;
+  export let maxScore;
+
   onMount(() => {
     let script = document.createElement('script');
     script.src =
@@ -29,11 +33,10 @@
   </div>
   <div class="message">
     <div class="congratulations">Congratulations!</div>
-    <!--Harded the below number due to time contraints-->
-    <h2>You Scored: 7/7</h2>
+    <h2>You Scored: {score}/{maxScore}</h2>
     <iframe
       class="home-page-video"
-      src="https://www.youtube.com/embed/nrys2xH00u4"
+      src="https://www.youtube.com/embed/nrys2xH00u4?autoplay=1&?rel=0"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
