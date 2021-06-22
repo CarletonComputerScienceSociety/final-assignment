@@ -45,12 +45,15 @@
   {/if}
   <div class="home-page-score">
     {#if object.submitted}
+      <Confetti score={object.getScore()} maxScore={object.getMaxScore()} />
+      <!--
       <h2>You Scored: {object.getDisplayScore()}</h2>
       {#if object.isPassingScore()}
-        <Confetti />
+        <Confetti score={object.getScore())} maxScore={object.getMaxScore()}/>
       {:else}
         <div>Getting a perfect score will unlock the bonus message.</div>
       {/if}
+      -->
     {/if}
   </div>
 </div>

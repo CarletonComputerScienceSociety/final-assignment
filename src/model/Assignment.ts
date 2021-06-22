@@ -79,6 +79,10 @@ class Assignment {
     return score;
   }
 
+  getMaxScore(): number {
+    return this.state.length;
+  }
+
   getDisplayScore(): string {
     return this.getScore() + '/' + this.state.length;
   }
